@@ -78,6 +78,12 @@ footer {
   margin-bottom: 30px;
 }
 
+
+.btn-danger{
+  width: 100%;
+  margin-top: 0.5em;    
+}
+
 /* Responsive Styles */
 
 @media(max-width:991px) {
