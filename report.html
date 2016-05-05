@@ -9,6 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+
     <title>BootstarpC</title>
 
     <!-- Bootstrap Core CSS -->
@@ -69,20 +73,85 @@
 
 
         <ul class="nav nav-pills">
-          <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
-          <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+          <li class="active"><a data-toggle="pill" href="#home">Tabulka</a></li>
+          <li><a data-toggle="pill" href="#menu1">Pridavanie</a></li>
           <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
           <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
         </ul>
 
         <div class="tab-content">
           <div id="home" class="tab-pane fade in active">
-            <h3>HOME</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h3>Tabulka</h3>
+            <p><table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Meno</th>
+      <th>Priezvisko</th>
+      <th>Puizivatelske meno</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          <i class="fa fa-trash" aria-hidden="true"></i>
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@TwBootstrap</td>
+      <td>
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          <i class="fa fa-trash" aria-hidden="true"></i>
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          <i class="fa fa-trash" aria-hidden="true"></i>
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+      <td>
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          <i class="fa fa-trash" aria-hidden="true"></i>
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </td>
+    </tr>
+  </tbody>
+</table></p>
           </div>
           <div id="menu1" class="tab-pane fade">
-            <h3>Menu 1</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h3>Pridavanie</h3>
+            <div class="row">
+              <div class="col-md-4"><label for="name" class="h4">Meno</label>
+              <input type="text" class="form-control" id="name" placeholder="Vlozit meno" required></div>
+              <div class="col-md-4"><label for="name" class="h4">Priezvisko</label>
+              <input type="text" class="form-control" id="name" placeholder="Vlozit priezvisko" required></div>
+              <div class="col-md-4"><label for="name" class="h4">Pouzivatelske meno</label>
+              <input type="text" class="form-control" id="name" placeholder="Vlozit pouzivatelske meno" required></div>
+              <div class="col-md-12">
+                  <button type="submit" id="form-submit" class="btn btn-danger btn-md pull-left ">Add</button>
+              </div>
+            </div>
           </div>
           <div id="menu2" class="tab-pane fade">
             <h3>Menu 2</h3>
